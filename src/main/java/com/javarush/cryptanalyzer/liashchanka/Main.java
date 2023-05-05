@@ -4,6 +4,7 @@ import java.io.*;
 import java.security.SecureRandom;
 import java.util.Random;
 
+import static com.javarush.cryptanalyzer.liashchanka.BruteForce.makeBruteForse;
 import static com.javarush.cryptanalyzer.liashchanka.CryptoAlphabet.ALPHABET;
 
 public class Main {
@@ -38,8 +39,8 @@ public class Main {
         StringBuilder textAfterCoding = new StringBuilder();
         StringBuilder textDeCoding = new StringBuilder();
 
-        System.out.println(ALPHABET);
-        System.out.println(makeNewAlphabetWithKey(key));
+        // System.out.println(ALPHABET);
+       // System.out.println(makeNewAlphabetWithKey(key));
 
 
 // Шифрование нашего текста
@@ -97,19 +98,20 @@ public class Main {
 
         System.out.println("--------------------------------");
 
-// Расшифровка текста методом брутфорс
-        for (int k = 1; k < 84; k++) {
-            StringBuilder textDeCodingBrutForce = new StringBuilder();
-            for (int i = 0; i < textCodingFromFile.length(); i++) {
-                for (int j = 0; j < makeNewAlphabetWithKey(k).length(); j++) {
-                    if (textCodingFromFile.charAt(i) == makeNewAlphabetWithKey(k).charAt(j)) {
-                        textDeCodingBrutForce.append(ALPHABET.charAt(j));
-
-                    }
-                }
-            }
-            System.out.println(k + " " + textDeCodingBrutForce);
-        }
+        makeBruteForse(textCodingFromFile);
+// Расшифровка текста методом
+//        for (int k = 1; k < 84; k++) {
+//            StringBuilder textDeCodingBrutForce = new StringBuilder();
+//            for (int i = 0; i < textCodingFromFile.length(); i++) {
+//                for (int j = 0; j < makeNewAlphabetWithKey(k).length(); j++) {
+//                    if (textCodingFromFile.charAt(i) == makeNewAlphabetWithKey(k).charAt(j)) {
+//                        textDeCodingBrutForce.append(ALPHABET.charAt(j));
+//
+//                    }
+//                }
+//            }
+//            System.out.println(k + " " + textDeCodingBrutForce);
+//        }
 
 
 
