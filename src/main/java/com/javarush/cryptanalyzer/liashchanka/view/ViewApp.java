@@ -1,6 +1,5 @@
 package com.javarush.cryptanalyzer.liashchanka.view;
 
-import com.javarush.cryptanalyzer.liashchanka.constants.PathsFiles;
 import com.javarush.cryptanalyzer.liashchanka.functions.RandomKey;
 import com.javarush.cryptanalyzer.liashchanka.functions.ReadAndWriteFile;
 import com.javarush.cryptanalyzer.liashchanka.services.BruteForce;
@@ -11,7 +10,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 import static com.javarush.cryptanalyzer.liashchanka.constants.PathsFiles.*;
 import static com.javarush.cryptanalyzer.liashchanka.constants.ViewConstants.*;

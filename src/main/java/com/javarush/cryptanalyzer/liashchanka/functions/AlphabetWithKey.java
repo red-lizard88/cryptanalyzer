@@ -4,7 +4,7 @@ import static com.javarush.cryptanalyzer.liashchanka.constants.CryptoAlphabet.AL
 
 public class AlphabetWithKey {
 
-    // Создание алфавита со смещением (ключом)
+    // РЎРѕР·РґР°РЅРёРµ Р°Р»С„Р°РІРёС‚Р° СЃРѕ СЃРјРµС‰РµРЅРёРµРј (РєР»СЋС‡РѕРј)
     public static StringBuilder makeNewAlphabetWithKey(int key) {
         StringBuilder newAlphabet = new StringBuilder();
         for (int i = key; i < ALPHABET.length(); i++) {

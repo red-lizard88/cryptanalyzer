@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1251">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/encoded.txt" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/output.txt" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/Main.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/Main2.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/view/ViewApp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/constants/ViewConstants.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/functions/AlphabetWithKey.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/functions/ReadAndWriteFile.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/services/BruteForce.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/services/Coding.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/services/Decoding.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/liashchanka/view/ViewApp.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>

@@ -9,7 +9,7 @@ import static com.javarush.cryptanalyzer.liashchanka.constants.CryptoAlphabet.AL
 
 public class Decoding {
 
-// Расшифровка нашего текста
+// Р Р°СЃС€РёС„СЂРѕРІРєР° РЅР°С€РµРіРѕ С‚РµРєСЃС‚Р°
     public static StringBuilder decodingText(String text, int key) {
         StringBuilder textDeCoding = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {

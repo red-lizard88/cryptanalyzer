@@ -6,7 +6,7 @@ import static com.javarush.cryptanalyzer.liashchanka.constants.PathsFiles.*;
 
 public class ReadAndWriteFile {
 
-    // Читаем данные из файла input.txt или encoded.txt
+    // Р§РёС‚Р°РµРј РґР°РЅРЅС‹Рµ РёР· С„Р°Р№Р»Р° input.txt РёР»Рё encoded.txt
     public static String readFile(String input) {
         try (
                 FileReader in = new FileReader(input);
@@ -20,7 +20,7 @@ public class ReadAndWriteFile {
 
     }
 
-    // Записываем зашифрованный текст в файл encoded.txt или расшифрованный в output.txt
+    // Р—Р°РїРёСЃС‹РІР°РµРј Р·Р°С€РёС„СЂРѕРІР°РЅРЅС‹Р№ С‚РµРєСЃС‚ РІ С„Р°Р№Р» encoded.txt РёР»Рё СЂР°СЃС€РёС„СЂРѕРІР°РЅРЅС‹Р№ РІ output.txt
     public static void writeFile(StringBuilder text, String path) {
         try (
             FileWriter out = new FileWriter(path);

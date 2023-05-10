@@ -6,7 +6,7 @@ import static com.javarush.cryptanalyzer.liashchanka.constants.CryptoAlphabet.AL
 
 public class Coding {
 
-    // Шифрование нашего текста
+    // РЁРёС„СЂРѕРІР°РЅРёРµ РЅР°С€РµРіРѕ С‚РµРєСЃС‚Р°
     public static StringBuilder codingText(String textForCoding, int key) {
         StringBuilder textAfterCoding = new StringBuilder();
         for (int i = 0; i < textForCoding.length(); i++) {

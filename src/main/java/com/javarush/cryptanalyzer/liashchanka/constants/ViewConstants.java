@@ -1,12 +1,12 @@
 package com.javarush.cryptanalyzer.liashchanka.constants;
 
 public class ViewConstants {
-    public static final String TITLE_APP = "Криптоализатор шифра Цезаря";
-    public static final String PATH_INPUT_FILE = "Введите полный путь к файлу или оставьте пустым для выбора файла с кодируемым текстом по умолчанию:";
-    public static final String KEY_FOR_DECODING = "Введите ключ для шифрования или оставьте поле пустым для рандомной генерации";
-    public static final String BUTTON_CODING = "Зашифровать";
-    public static final String PATH_ENCODING = "Введите полный путь к файлу с закодированным текстом или оставьте поле пустым";
-    public static final String KEY_FOR_ENCODING = "Введите ключ для дешифровки текста:";
-    public static final String BUTTON_ENCODING = "Расшифровать";
-    public static final String BRUT_FORCE = "Брут форс";
+    public static final String TITLE_APP = "РљСЂРёРїС‚РѕР°Р»РёР·Р°С‚РѕСЂ С€РёС„СЂР° Р¦РµР·Р°СЂСЏ";
+    public static final String PATH_INPUT_FILE = "Р’РІРµРґРёС‚Рµ РїРѕР»РЅС‹Р№ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ РёР»Рё РѕСЃС‚Р°РІСЊС‚Рµ РїСѓСЃС‚С‹Рј РґР»СЏ РІС‹Р±РѕСЂР° С„Р°Р№Р»Р° СЃ РєРѕРґРёСЂСѓРµРјС‹Рј С‚РµРєСЃС‚РѕРј РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ: ";
+    public static final String KEY_FOR_DECODING = "Р’РІРµРґРёС‚Рµ РєР»СЋС‡ РґР»СЏ С€РёС„СЂРѕРІР°РЅРёСЏ РёР»Рё РѕСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј РґР»СЏ СЂР°РЅРґРѕРјРЅРѕР№ РіРµРЅРµСЂР°С†РёРё";
+    public static final String BUTTON_CODING = "Р—Р°С€РёС„СЂРѕРІР°С‚СЊ";
+    public static final String PATH_ENCODING = "Р’РІРµРґРёС‚Рµ РїРѕР»РЅС‹Р№ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ СЃ Р·Р°РєРѕРґРёСЂРѕРІР°РЅРЅС‹Рј С‚РµРєСЃС‚РѕРј РёР»Рё РѕСЃС‚Р°РІСЊС‚Рµ РїРѕР»Рµ РїСѓСЃС‚С‹Рј";
+    public static final String KEY_FOR_ENCODING = "Р’РІРµРґРёС‚Рµ РєР»СЋС‡ РґР»СЏ РґРµС€РёС„СЂРѕРІРєРё С‚РµРєСЃС‚Р°: ";
+    public static final String BUTTON_ENCODING = "Р Р°СЃС€РёС„СЂРѕРІР°С‚СЊ";
+    public static final String BRUT_FORCE = "Р‘СЂСѓС‚ С„РѕСЂСЃ";
 }

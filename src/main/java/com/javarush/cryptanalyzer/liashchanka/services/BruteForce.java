@@ -17,7 +17,7 @@ public class BruteForce {
 
 
 
-    // Подсчет символов используя регулярку
+    // РџРѕРґСЃС‡РµС‚ СЃРёРјРІРѕР»РѕРІ РёСЃРїРѕР»СЊР·СѓСЏ СЂРµРіСѓР»СЏСЂРєСѓ
     public static void countSymbols(String substr, String str) {
         Pattern p = Pattern.compile(substr);
         Matcher m = p.matcher(str);
@@ -26,7 +26,7 @@ public class BruteForce {
         }
     }
 
-    // Подсчет конкретных символов используя регулярку
+    // РџРѕРґСЃС‡РµС‚ РєРѕРЅРєСЂРµС‚РЅС‹С… СЃРёРјРІРѕР»РѕРІ РёСЃРїРѕР»СЊР·СѓСЏ СЂРµРіСѓР»СЏСЂРєСѓ
     public static int countSymbolsRegExp(String str) {
         String substr1 = ", ";
         String substr2 = "\\. ";
@@ -43,7 +43,7 @@ public class BruteForce {
         return counter;
     }
 
-    // Расшифровка текста методом брутфорс
+    // Р Р°СЃС€РёС„СЂРѕРІРєР° С‚РµРєСЃС‚Р° РјРµС‚РѕРґРѕРј Р±СЂСѓС‚С„РѕСЂСЃ
     public static String makeBruteForse(String textCodingFromFile) {
         List<String> variantTextOfDecoding = new ArrayList<>();
         List<Integer> countOfDecoding = new ArrayList<>();
@@ -59,7 +59,7 @@ public class BruteForce {
                 }
             }
             counter = 0;
-// Выбираем максимальное количество пробелов, точка с пробелом и т.д. из вариантов шифровок
+// Р’С‹Р±РёСЂР°РµРј РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕР±РµР»РѕРІ, С‚РѕС‡РєР° СЃ РїСЂРѕР±РµР»РѕРј Рё С‚.Рґ. РёР· РІР°СЂРёР°РЅС‚РѕРІ С€РёС„СЂРѕРІРѕРє
             variantTextOfDecoding.add(String.valueOf(textDeCodingBrutForce));
             countOfDecoding.add(countSymbolsRegExp(String.valueOf(textDeCodingBrutForce)));
         }
