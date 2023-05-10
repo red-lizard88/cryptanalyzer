@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyzer.liashchanka;
+package com.javarush.cryptanalyzer.liashchanka.constants;
 
 public class CryptoAlphabet {
     private static final String lettersUpperCase = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";

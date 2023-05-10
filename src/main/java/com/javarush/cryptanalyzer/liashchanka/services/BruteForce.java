@@ -1,4 +1,6 @@
-package com.javarush.cryptanalyzer.liashchanka;
+package com.javarush.cryptanalyzer.liashchanka.services;
+
+import com.javarush.cryptanalyzer.liashchanka.functions.AlphabetWithKey;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,21 +8,14 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.javarush.cryptanalyzer.liashchanka.CryptoAlphabet.ALPHABET;
-import static com.javarush.cryptanalyzer.liashchanka.Main.makeNewAlphabetWithKey;
+import static com.javarush.cryptanalyzer.liashchanka.constants.CryptoAlphabet.ALPHABET;
+
 
 public class BruteForce {
 
     public static int counter;
 
-    public static void main(String[] args) {
-        String str = "Здравствуйте, меня зовут Илья! Я, программист?";
 
-        countSymbolsRegExp(str);
-
-
-        System.out.println(counter);
-    }
 
     // Подсчет символов используя регулярку
     public static void countSymbols(String substr, String str) {
@@ -49,15 +44,15 @@ public class BruteForce {
     }
 
     // Расшифровка текста методом брутфорс
-    public static void makeBruteForse(String textCodingFromFile) {
+    public static String makeBruteForse(String textCodingFromFile) {
         List<String> variantTextOfDecoding = new ArrayList<>();
         List<Integer> countOfDecoding = new ArrayList<>();
 
         for (int k = 1; k < 84; k++) {
             StringBuilder textDeCodingBrutForce = new StringBuilder();
             for (int i = 0; i < textCodingFromFile.length(); i++) {
-                for (int j = 0; j < makeNewAlphabetWithKey(k).length(); j++) {
-                    if (textCodingFromFile.charAt(i) == makeNewAlphabetWithKey(k).charAt(j)) {
+                for (int j = 0; j < AlphabetWithKey.makeNewAlphabetWithKey(k).length(); j++) {
+                    if (textCodingFromFile.charAt(i) == AlphabetWithKey.makeNewAlphabetWithKey(k).charAt(j)) {
                         textDeCodingBrutForce.append(ALPHABET.charAt(j));
 
                     }
@@ -70,7 +65,7 @@ public class BruteForce {
         }
         int indexMaxValue = countOfDecoding.indexOf(Collections.max(countOfDecoding));
 
-        System.out.println(variantTextOfDecoding.get(indexMaxValue));
+        return variantTextOfDecoding.get(indexMaxValue);
 
 
     }
