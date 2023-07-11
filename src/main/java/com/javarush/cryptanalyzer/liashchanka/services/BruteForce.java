@@ -51,10 +51,14 @@ public class BruteForce {
         for (int k = 1; k < 84; k++) {
             StringBuilder textDeCodingBrutForce = new StringBuilder();
             for (int i = 0; i < textCodingFromFile.length(); i++) {
+                int m=0;
                 for (int j = 0; j < AlphabetWithKey.makeNewAlphabetWithKey(k).length(); j++) {
                     if (textCodingFromFile.charAt(i) == AlphabetWithKey.makeNewAlphabetWithKey(k).charAt(j)) {
                         textDeCodingBrutForce.append(ALPHABET.charAt(j));
-
+                        m=1;
+                    }
+                    if (j == AlphabetWithKey.makeNewAlphabetWithKey(k).length()-1 && m==0){
+                        textDeCodingBrutForce.append(textCodingFromFile.charAt(i));
                     }
                 }
             }

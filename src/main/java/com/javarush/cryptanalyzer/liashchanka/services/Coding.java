@@ -10,10 +10,17 @@ public class Coding {
     public static StringBuilder codingText(String textForCoding, int key) {
         StringBuilder textAfterCoding = new StringBuilder();
         for (int i = 0; i < textForCoding.length(); i++) {
+            int k = 0;
             for (int j = 0; j < ALPHABET.length(); j++) {
                 if (textForCoding.charAt(i) == ALPHABET.charAt(j)) {
                     textAfterCoding.append(AlphabetWithKey.makeNewAlphabetWithKey(key).charAt(j));
+                    k=1;
                 }
+                if(j == ALPHABET.length()-1 && k==0){
+                    textAfterCoding.append(textForCoding.charAt(i));
+                }
+
+
             }
         }
         return textAfterCoding;

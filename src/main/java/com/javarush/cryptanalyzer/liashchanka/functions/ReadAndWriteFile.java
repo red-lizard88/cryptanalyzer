@@ -11,7 +11,13 @@ public class ReadAndWriteFile {
         try (
                 FileReader in = new FileReader(input);
                 BufferedReader reader = new BufferedReader(in)) {
-            return reader.readLine();
+                StringBuilder lineBuilder = new StringBuilder();
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lineBuilder.append(line).append("\n");
+            }
+            return String.valueOf(lineBuilder);
 
         } catch (
                 IOException e) {
@@ -23,15 +29,13 @@ public class ReadAndWriteFile {
     // Записываем зашифрованный текст в файл encoded.txt или расшифрованный в output.txt
     public static void writeFile(StringBuilder text, String path) {
         try (
-            FileWriter out = new FileWriter(path);
-            BufferedWriter writer = new BufferedWriter(out)) {
+                FileWriter out = new FileWriter(path);
+                BufferedWriter writer = new BufferedWriter(out)) {
             writer.write(String.valueOf(text));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
-
 
 
 }
